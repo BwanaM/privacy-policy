@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Worshipping Through Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px 20px;
+            background: linear-gradient(120deg, #4b6cb7 0%, #182848 100%);
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .update-text {
+            text-align: right;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #666;
+            padding: 0 10px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #4b6cb7, #182848);
+        }
+        
+        .paragraph {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .brand {
+            font-weight: 700;
+            color: #4b6cb7;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #182848;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            color: #4b6cb7;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            margin: 15px 0;
+            border-radius: 2px;
+        }
+        
+        .highlight {
+            background-color: rgba(75, 108, 183, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #182848;
+        }
+        
+        .list-container {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        
+        .list-item {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .list-item::before {
+            content: "•";
+            color: #4b6cb7;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        .last-paragraph {
+            margin-top: 10px;
+        }
+        
+        .email {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: linear-gradient(120deg, #4b6cb7, #182848);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(75, 108, 183, 0.3);
+        }
+        
+        .email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(75, 108, 183, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
+        }
+        
+        .footer-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .brand-footer {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #182848;
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .card {
+                padding: 20px 15px;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.7rem;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .update-text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Privacy Policy</h1>
+            <p class="subtitle">for Worshipping Through Music Apps</p>
+        </div>
+        
+        <p class="update-text">Last Updated: <span id="current-date">July 18, 2025</span></p>
+        
+        <div class="card">
+            <p class="paragraph">
+                At <span class="brand">Worshipping Through Music</span>, we deeply respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we handle data in our Mobile applications to ensure transparency and trust.
+            </p>
+        </div>
+        
+        <div class="card">
+            <p class="paragraph">
+                By using our apps, you agree to the terms outlined here. If you do not agree, please refrain from installing or using our applications. We may update this policy occasionally, so we encourage you to review it periodically.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-user-shield"></i> 1. Personal Data</h2>
+            <div class="divider"></div>
+            <p class="paragraph">
+                We <span class="highlight">do not</span> collect, store, or share any personally identifiable information (such as your name, email, or contact details) through our apps. Your privacy is our priority, and we ensure that our apps remain safe and respectful of your personal data.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-chart-line"></i> 2. Non-Personal Data</h2>
+            <div class="divider"></div>
+            <p class="paragraph">
+                To enhance app performance and user experience, we may collect <span class="highlight">anonymous, non-personal information</span>, including:
+            </p>
+            <div class="list-container">
+                <p class="list-item">Device type (e.g., smartphone, tablet)</p>
+                <p class="list-item">Operating system version</p>
+                <p class="list-item">Diagnostic data (such as crash reports for troubleshooting)</p>
+            </div>
+            <p class="paragraph last-paragraph">
+                This data helps us improve app stability and functionality but <span class="highlight">cannot</span> be used to identify you personally.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-sync-alt"></i> 3. Changes to This Policy</h2>
+            <div class="divider"></div>
+            <p class="paragraph">
+                We may update this Privacy Policy as needed. Any changes will be posted here, and your continued use of our apps means you accept the updated terms.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> 4. Contact Us</h2>
+            <div class="divider"></div>
+            <p class="paragraph">
+                If you have any questions about our Privacy Policy, feel free to reach out to us at:
+            </p>
+            <a href="mailto:privacy@worshippingmusic.com" class="email">privacy@worshippingmusic.com</a>
+        </div>
+        
+        <div class="footer">
+            <p class="footer-text">Thank you for trusting</p>
+            <p class="brand-footer">Worshipping Through Music!</p>
+        </div>
+    </div>
+
+    <script>
+        // Set current date automatically
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = now.toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>
